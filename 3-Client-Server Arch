@@ -1,0 +1,50 @@
+WHAT IS CLIENT SERVER ARCHITECTURE ?
+
+Thick Client : When logic and processing on client side
+    - Gaming Apps
+    - Video Editing
+
+Thin Client : When logic and processing on server side
+    - E-commerce
+    - Streaming Platform
+
+* 2 Tier Architecture
+
+           Request
+Client  ---------> Server -------> Logic
+        <--------         <------- Data
+           Response
+
+    - Light weight website for small business
+
+[client]
+
+
+* 3 Tier Architecture
+
+Processing is Hug
+
+           Request
+Client  ---------> Logic ------->  Data
+        <--------         <-------
+           Response
+
+[client]    [server]         [Data]
+
+    - Basic library management application for school
+
+* N Tier Architecture
+
+Processing is Hug, Also requirement is not full fill so we add more layer in between
+
+           Request
+Client  ---------> Logic ------->  Data
+        <--------         <-------
+           Response
+
+[client]      [server]         [Data]
+            |           |
+        LoadBalancer   Cache
+           Proxy
+
+    - Large scale application ( Gmail, Facebook )
