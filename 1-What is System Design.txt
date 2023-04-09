@@ -1,0 +1,44 @@
+• Course
+  [ Instructor : yogita sharma ]
+  [ Playlist link : https://www.youtube.com/watch?v=FSR1s2b-l_I&list=PLTCrU9sGyburBw9wNOHebv9SjlE4Elv5a ]
+
+- What is a System?
+    A system is a loosely
+    used term for an architecture or
+    collection of software or technology
+    that communicate with each other
+    interact with each other in order to
+    serve a certain set of users with a
+    certain set of requirements
+    example
+    * image sharing system like instagram or
+    * texting like whatsapp or
+    * streaming systems like netflix or
+    * hotstar etc
+
+- What is Design?
+    understanding the user requirements
+    and selecting the components
+    modules and software technologies how
+    they are going to be intertwined and
+    communicating with each other
+    to actually serve the need of the system
+    that is the basic definition of design
+
+- Why System Design?
+    why system design is needed as a skill
+    or why system design is such a popular
+    topic the whole process is actually very
+    complicated it needs a lot of
+    experience expertise and knowledge about
+    software technologies etc in order to build
+    successful large scale systems in real
+    world actually this is not done by one person
+    but as an engineer one should know about
+    the components the trade-offs
+    the problems that have to be solved the
+    concerns of where systems can fail
+    how to handle those failures what are
+    the concerns and the constraints that
+    have to be addressed and taken care
+    of while designing a system
