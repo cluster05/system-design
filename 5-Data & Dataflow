@@ -1,0 +1,54 @@
+DATA AND DATAFLOW
+
+Data
+    Information that has been translated into a form that is efficient for movement or processing.
+    Data is stayed at the core of system design
+
+Data Format/Representation
+    Understand the what the different type of format and what are different properties
+    so that design the system such way that exchange of data in easy and secure way
+
+    Business Layer    -> text,videos,images,notes
+    Application Layer -> JSON/XML
+    DataStore (DB's)  -> table,index,list,trees
+    Network Layer     -> Packets
+    Hardware Layer    -> 0s & 1s
+
+Datastore's
+    Databases  - Username, User's Phone number, City, Address
+    Queues     - Request:Response
+    Caches     - Send sms request, Send email request
+    Indexes    - Most searched items, items searched in last 1 hours
+
+Data Flow Methods
+    Methods which through data flow
+    Data will exchange between components
+    Eg.
+    APIs
+    Message
+    Events
+
+Data Generation
+    Users     -  Users data
+    Internal  -  Data about data, Logs of application, system population on their ow
+    Insights  -  User Behavioural Pattern
+
+Factors
+    Factor consider about data before design system
+    Type of Data           - Data could be text,images,videos
+    Volume                 - system which support TB of data is diff from system which is support GB of data
+    Consumption/Retrieval  - Read and writes of data, Rate at which it accessing
+    Security               - Security of data
+
+System Example :
+Authorization :
+    Volume :   small DB
+    Security : High
+
+Streaming :
+    Volume :   Big DB
+    Retrieval : High
+
+Transaction :
+    Volume : High ( Journey is Important )
+    Security : High
