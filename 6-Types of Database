@@ -1,0 +1,57 @@
+TYPES OF DATABASES
+
+Different type of database bases on property of data
+
+Types:
+    Relations  ( SQL )
+        Factor
+            Schema -> How your data is representation
+                      Database for inter related complex data can be easily designed
+                      Ensures garbage or null value is not populated into the DB
+                      Ensures all other schema constraints are followed
+            ACID   ->
+                    A - Atomicity - Traction in database is either
+                                    happen completely or not happen at all
+                    C - Consistency -  At given point of time state of DB should consistent
+                    I - Isolation   -  Two transaction do not know about each other
+                                    Read/Write happening What ever happen will give result
+                    D - Durability  - Mechanism that database ensures write and update are happening
+                                    they logged properly and data store properly
+       Cannot Support ->
+                Schema is not fixed
+                New Data is coming every day
+
+   Non-Relations ( NoSQL )
+       Based On
+           Key-Value Stores -
+               Only key value format
+
+               Advantages :
+               Caching Solution
+               Fast
+               Quick Access
+
+           Column based DBs
+             Contain fixed schema and columns but this DB does not support the ACID properties
+             Used in Heavy writes ( Event Data :  Music App , IOT Data )
+
+             Does not support heavy writes
+                 Table support and build according to condition
+
+           Document Based DBs
+              Usually used when schema is not fixed
+              Support heavy reads and writes
+              No complex Query
+
+              No schema so some value is null
+              No ACID property so sometime data can be inconsistency
+
+              Mapping :
+              table -> collection
+              row   -> documents
+
+           Search DBs
+              Data stored in search DB is not primary DB, data is updated on basis of search query
+
+    File
+    Network
