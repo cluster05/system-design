@@ -1,0 +1,32 @@
+Proxies
+
+Proxies : In behalf
+
+
+           forward
+          -------->
+Client    [ Proxy ]     Server
+          <--------
+           reverse
+
+
+In Term of client-server Arch
+- Forward Proxy
+    Machine sit between client and server side that sits on server, which talk's to a server on behalf of client
+    Client never talk to server ( client is anonymous to server )
+    Proxy talk to server
+
+    Eg :
+     Block the site
+
+- Reverse Proxy
+    Machine sit between client and server side that sits on server, which talk's to a client on behalf of server
+    Client talk to proxy
+    Proxy talk to client
+
+    Eg :
+    Traffic Control
+    Caching Response
+    Mitigate DDos Attack
+    SSL Encryption
+
