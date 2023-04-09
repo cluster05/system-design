@@ -1,0 +1,47 @@
+COMPONENTS OF SYSTEM DESIGN
+* Logical Entities
+* Tangible Entities [Technology]
+
+* Logical Entities
+    the way system is presented to the user
+    so that the users can interact with it
+    comes under one more logical entity of a
+    system.
+
+    - Data
+    - Database
+    - Application
+    - Cache
+    - Message Queue
+    - Infra
+    - Communication
+
+        Database
+           ^
+           | |        [communication via communication protocol like TCP/HTTP/HTTPs]
+             V
+       Application  - >  Part of Code running on machine
+           ^
+           | |       [communication via api/request via protocol like TCP/HTTP/HTTPs]
+             V
+         Users
+
+* Tangible Entities
+
+    - Text, images, videos
+    - MongoDB, MySql, Cassandra
+    - Java, Golang, Python
+    - Redis, MemeCache
+    - Kafka, RabbitMQ
+    - AWS, GCP, Azure
+    - Api, RPC's, Messages
+
+
+Presentation
+[ Desktop/Mobile]  - >  APP  <---- > APP
+                        | [code]    / |
+                        |          /  |
+                       APP --------  DB
+
+                            [ Infra ]
+
