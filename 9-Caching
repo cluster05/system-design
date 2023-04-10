@@ -1,0 +1,87 @@
+CACHING
+
+Caching is defined as hardware or software component which help to serving data
+that is frequently request or which expensive requested
+
+Eg         [img]
+client  -------- > server -------> DB
+        <---------        <------
+                [cache]
+ client side       server side cache
+  (browser)        (in reverse proxy)
+
+
+Cache Hit
+    if data present for request present
+
+Cache invalidation
+    Data is which is in cache is gonna change at some point, process of removing
+    old value from cache is called cache invalidation
+
+    Methods :  ( Depend On Use case )
+        Keeping is expiry time ( TTL )
+        Queue FIFO ( If queue is full )
+        Least Recently Used ( LRU )
+        Least Frequently Used ( LFU )
+
+Caching Pattern/Strategy
+   - Cache Aside : Cache never talk to DB
+
+     Pros :
+        Support heavy reads
+        Works even if cache goes down
+
+     Flow :
+        TTL/application code have to be used to keep DB and cache consistent
+
+
+                Request                Write
+     client   --------->  server  -----------> DB
+              <--------   |   ^   <-----------
+                Response  |   |     Read
+                          |   |
+                   write  v   |   Read
+                          Cache
+
+
+   - Read Through: Cache sit between server and DB
+
+
+      Pros :
+        Greate alternate for read heavy worloads example newsfeed
+
+      Flaw :
+        Data modeling of cache and DB have to be similar
+        Cache layers adds extra layer of latency while writing to the DB
+            ( can be solved using write around pattern )
+            *  Write Around : Cache sit between server and DB
+
+
+      Cons :
+        Cache failure result in system failure
+
+
+               Request                Write
+    client   --------->  server  ----------->   Cache  <-------- DB
+             <--------           <-----------            Read
+               Response             Read
+
+
+   - Write Through: Cache sit between server and DB
+
+
+                 Request                Write
+       client   --------->  server  ----------->   Cache  --------> DB
+                <--------           <-----------            Write
+                  Response             Read
+
+
+
+   - Write Back : Cache sit between server and DB
+
+                    Request                Write    Cache write in bulk to DB
+          client   --------->  server  ----------->   Cache  --------> DB
+                   <--------           <-----------          -------->
+                     Response             Read               -------->
+
+
