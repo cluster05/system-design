@@ -1,0 +1,73 @@
+APPLICATION / SERVICES
+
+What is Application/Services
+    Application or services perform  certain responsibilities
+    Application at different layers have different responsibilities
+    Application at client side have different responsibilities, same as from server
+
+    Application at client side and server side interact with each other,
+    also if there are many application server side they are also interact
+    with each other to full full curtain feature
+
+    client   <---------   server
+             ---------->
+
+Tech Stack & Responsibilities
+    Application is peace of code that mean it must be written in some language
+    using certain framework
+
+    Frontend : Java/Kotlin, Swift, JS
+    Backend  : Python, Java, Go
+    Database : Query
+
+    Framework
+        Frameworks do most of bootstrapping and common task that are needed for application
+        We can use framework to hardness its power start building feature on top of it.
+
+
+Responsibilities
+    Client Apps
+        Render UI elements
+        Handling Interaction
+        Collect Data
+        Communicate with Backend (APIs)
+        Render Static Data
+
+    Server Apps
+        Expose API endpoint
+        Housing Business Logic
+        Handle data modeling/transformation
+        Interact with data store
+        Interact with other services
+
+Elements/factors of App Design/Developments
+    Eg Building Parking App
+
+    Requirement : Feature requirement, who is application for
+    Layers      : Mobile app,Desktop app according to it to for tech stack
+    Tech Stack
+    Code Structure/Design Pattern
+    Data Store interaction
+    Performance/Cost
+    Deployment
+    Monitoring   : For large scale application, logging for error, crashing report for analysis
+    Excellence/Reliable
+
+
+
+Monolithic Application
+    Single Application manages all functionalities
+
+    Managing Notes + Handling Payment + User data and auth
+
+Microservice Application
+
+    Have multiple services have multiple application to full fill multiple responsibilities
+
+    Different Serviecs
+    Managing Notes
+    Handling Payments
+    Authentication
+
+
+
