@@ -79,6 +79,14 @@ Caching Pattern/Strategy
 
    - Write Back : Cache sit between server and DB
 
+       Pros :
+        Useful for write heavy workloads
+        Database failure can be sustained for the time cache keeps data in bulk
+        Used by various DB's internal implementation
+
+      Cons :
+        Cache failure result system failure
+
                     Request                Write    Cache write in bulk to DB
           client   --------->  server  ----------->   Cache  --------> DB
                    <--------           <-----------          -------->
