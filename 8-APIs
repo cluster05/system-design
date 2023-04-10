@@ -1,0 +1,28 @@
+APIs
+Application Programming Interface
+
+A  - When application have to interact to each other with different it does through APIs
+P  - Through APIs one piece of code can interact with another piece of code ( diff programming language )
+I  - Interface ( Abstraction )
+
+Advantages
+    Communication
+    Abstraction
+    Platform Agnostic
+
+Example Of APIs
+    Private APIs - Hidden APIs
+    Public APIs  - google map, stripe api
+    Web APIs     - Application of running on cloud interact with each other
+    SDK/LibraryAPIs - Abstraction
+
+API Factors
+    API contract
+    Documentation
+    Data Format
+    Security
+
+API Standards
+    RPC   - Remote Processor Call
+    SOAP  - Simple object access protocol
+    REST  - Representational State Transfer
